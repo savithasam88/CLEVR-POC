@@ -1,0 +1,11 @@
+:- object(X), at(X, R'), not hasProperty(X, P1', V1'). :- object(X), at(X, R'), not hasProperty(X, P2', V2').
+:- object(X), at(X, R'), hasProperty(X, P1', V1'). :- object(X), at(X, R'), hasProperty(X, P2', V2').
+:- object(X), at(X, R'), hasProperty(X, P1', V1'). :- object(X), at(X, R'), hasProperty(X, P1', V2').
+:- object(X), at(X, R'), not hasProperty(X, P1', V1'), not hasProperty(X, P2', V2').
+:- object(X), at(X, R'), hasProperty(X, P1', V1').
+:- #count{X: hasProperty(X, P1', V1'), object(X), at(X, R1')}!=N'.
+:- #count{X1, X2: sameProperty(X1, X2, P1'), object(X1), object(X2), at(X1, R1'), at(X2, R2')}<N'.
+:- #count{X1, X2: sameProperty(X1, X2, P1'), object(X1), object(X2), at(X1, R1'), at(X2, R2'), hasProperty(X1, P2', V2'), hasProperty(X2, P2', V2')}<N'.
+:- #count{X1, X2: sameProperty(X1, X2, P1'), object(X1), object(X2), at(X1, R1'), at(X2, R2')}>=N'.
+:- #count{X1, X2: sameProperty(X1, X2, P1'), object(X1), object(X2), at(X1, R1'), at(X2, R2'), hasProperty(X1, P2', V2'), hasProperty(X2, P2', V2')}>=N'.
+:- object(X), hasProperty(X, P1', V1').

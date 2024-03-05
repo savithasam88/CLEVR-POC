@@ -1,0 +1,37 @@
+{
+  "shape": {
+    "cube": "SmoothCube_v2",
+    "sphere": "Sphere",
+    "cylinder": "SmoothCylinder",
+    "cone": "Cone"
+  },
+  "color": {   
+    "gray": [87, 87, 87],
+    "red": [173, 35, 35],
+    "blue": [42, 75, 215],
+    "green": [29, 105, 20],
+    "brown": [129, 74, 25],
+    "purple": [129, 38, 192],
+    "cyan": [41, 208, 208],
+    "yellow": [255, 238, 51]
+    
+  },
+  "material": {
+    "rubber": "Rubber",
+    "metal": "MyMetal"
+  },
+  "size": {
+    "large": 1,
+    "medium": 0.58,
+    "small": 0.39
+  },
+  "regions": 
+    { "0": {"x":[-5, 0], "y":[0, 5]},
+      "1": {"x":[0.5, 5], "y":[0, 5]},
+      "2": {"x":[-5, 0], "y":[-5, 0]},
+      "3": {"x":[0.5, 5], "y":[-5, 0]}
+    }
+}
+
+
+
